@@ -10,7 +10,6 @@ function Home3({list}) {
             <div className={style.lists}>
                 {
                     list.map((info, index) => {
-                        console.log(info);
                         return(
                             <div key={index} className={style.list}>
                                 <div className='bigger'>

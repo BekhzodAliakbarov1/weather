@@ -3,6 +3,7 @@ import Map from './Map'
 import style from './Home1.module.css'
 import {BsChevronDoubleLeft} from 'react-icons/bs'
 import {CgCompressV} from 'react-icons/cg'
+import MapMain from './MapMain'
 
 function Home1({information}) {
     const curentTime = new Date()
@@ -38,7 +39,7 @@ function Home1({information}) {
     }
     const mapRender = () => {
         return(
-            <Map coord={information.city.coord} name={information.city.country}/>
+            <MapMain coord={information.city.coord}/>
         )
 
     }
